@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #f4f4f4;
+}
+.navbar {
+    background: #F97300;
+}
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4!important;
+}
+.navbar-brand:hover {
+    color: #d6d6d6!important;
+}
+.nav-link {
+    margin-right: 1em;
+}
+.nav-link:hover {
+    background: #f4f4f4!important;
+    color: #f97300!important;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-toggler {
+    background: #ffffff;
+}
+.bg-dark {
+    background-color: #343a40;
+}
+.bg-primary {
+    background-color: #343a40;
+}
+.header {
+    position: relative;
+    
+    background-image: url("../img/back-img.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h3 {    
+    color: #3AC1EF;
+}
+.description h1 {
+    color: #F97300;
+}
+.description p {
+    color: #666666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+.description button {
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #ffffff;
+}
+.about {
+    margin: 0 0 4em 0;
+    padding: 1em;    
+    position: relative;
+}
+.about h1 {
+    color:#F97300;
+    margin: 2em;
+}
+.about img {
+    height: 100%;
+    width: 100%;
+}
+.about span {
+    display: block;
+    color: #888888;
+    position: absolute;
+    left: 35%;
+}
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #10828C;
+}
+.about .desc h3 {
+    color: #10828C;
+}
+.about .desc {
+    line-height: 2;
+    color: #888888;
+}
+.portfolio {
+    margin: 4em 0;
+    position: relative;
+}
+.portfolio h1{
+    color: #F97300;
+    margin: 2em;
+}
+.portfolio img {
+    height: 15rem;
+    width: 100%;
+    margin: 1em;
+}
+.blog {
+    margin: 4em 0;
+    position: relative;
+}
+.blog h1 {
+    color: #F97300;
+    margin: 2em;
+}
+.blog .card {
+    box-shadow: 0 0 5px #cccccc;
+}
+.blog .card img {
+    width: 100%;
+    height: 12em;
+}
+.blog .card-title {
+    color: #F97300;
+}
+.blog .card-body {
+    padding: 1em;
+}
+.blog a {
+    color: #000000;
+}
+.blog a:hover {
+    color: #888888;
+}
+.team {
+    margin: 4em 0;
+    position: relative;
+}
+.team h1 {
+    color: #F97300;
+    margin: 2em;
+}
+.team .item {
+    position: relative;
+}
+.team .item:hover {
+    color: #F97300;
+    opacity: 0.5;
+}
+.team .name {
+    background: #F97300;
+    color: #ffffff;
+    text-align: center;
+    border-bottom-left-radius: 93%;
+    transition: .3s ease-in-out;
+}
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+.contact-form h1 {
+    color: #F97300;
+    padding: 2em 1px;
+}
+.contact-form .right {
+    max-width: 600px;
+}
+.contact-form .right .btn-secondary {
+    background:  #F97300;
+    color: #fff;
+    border:0;
+}
+.contact-form .right .form-control::placeholder {
+    color: #888888;
+    font-size: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .description p {
+        width: 100%;
+        font-size: 12px;
+    }
+    .description button {
+        display: none;
+    }
+    .about {
+        margin-bottom: 0;
+    }
+    .about h1 {
+        margin: 5%;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    .about img {
+        margin: 0;
+        
+        height: auto;
+    }
+    .desc {
+       margin-top: 5%; 
+    }
+    .portfolio {
+        margin-top: 0;
+    }
+    .portfolio img {
+        height: auto;
+    }
+    .portfolio h1 {
+        margin: 5%;
+    }
+    .blog {
+        margin-bottom: 0;
+    }
+    .blog h1 {
+        margin: 5%;
+    }
+    .blog img {
+        height: auto!important;
+    }
+    .blog .card {
+        margin-bottom: 10%;
+    }
+    .blog p {
+        font-size: 14px;
+    }
+    .team {
+        margin: 0;
+    }
+    .team h1 {
+        margin: 5%;
+    }
+    .team .item {
+        margin-bottom: 5%;
+    }
+    .team .item:last-child {
+        margin-bottom: 0;
+    }
+    .contact-form {
+        margin-top: 0;
+    }    
+    .contact-form h1 {
+        padding: 5%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .description h1 {
+/*        font-size: 20px;*/
+    }
+    .description p {
+        font-size: 14px;
+    }
+    .description button {
+        display: none;
+    }
+    .about h1 {
+        margin: 5%;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    .about img {
+        margin: 0;
+        
+        height: auto;
+    }
+    .desc {
+       margin-top: 5%; 
+    }
+    .portfolio img {
+        height: auto;
+    }
+    .portfolio h1 {
+        margin: 5%;
+    }
+    .blog h1 {
+        margin: 5%;
+    }
+    .blog img {
+        height: auto!important;
+    }
+    .blog .card {
+        margin-bottom: 10%;
+    }
+    .blog p {
+        font-size: 14px;
+    }
+    .team {
+        margin-bottom: 0;
+    }
+    .team h1 {
+        margin: 5%;
+    }
+    .team .item {
+        margin-bottom: 5%;
+    }
+    .team .item:last-child {
+        margin-bottom: 0;
+    }
+    .contact-form {
+        margin-top: 0;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .description h1 {
+        font-size: 28px;        
+    }
+    .description p {
+        font-size: 18px;
+        margin: 25px 0 0 0;
+    }
+    .description button {
+        display: none;
+    }
+    .portfolio img {
+        height: auto;
+    }
+    .about img {
+        height: auto;
+    }
+    .blog img {
+        height: auto!important;
+    }
+}
+
